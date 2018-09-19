@@ -37,7 +37,14 @@ At the bottom of the screen in the app, you can see a label that shows the curre
 - 'SELECT_PHOTO': user clicks a photo in the gallery.
 - 'EXIT_PHOTO': user clicks to exit the photo.
 
+## Run the project
+The project repo contains 2 main folders:
+fsm-image-gallery ( the root folder which you need to clone )
+-- gallery-fake-data ( a mock JSON server I built )
+-- image-gallery ( the project folder )
 
-
-
-
+### Steps:
+1. Install NodeJS (https://nodejs.org/en/) if it isn't installed yet. 
+2. Clone the root folder with `git clone https://github.com/ilanbr/fsm-image-gallery.git` command.
+2. Run the Mock server: Open the "gallery-fake-data" folder with terminal ( I use GIT-BASH) and run `npm run json:server` command. it will open 'http://localhost:3004'.
+3.  Run the project: open the "image-gallery" folder with terminal ( I use GIT-BASH) and run `npm install`. it will open 'http://localhost:3000'.

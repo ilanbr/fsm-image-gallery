@@ -58,7 +58,7 @@ class App extends React.Component {
     const encodedQuery = encodeURIComponent(query);
     setTimeout(() => {      
       fetch(
-        `http://my-json-server.typicode.com/ilanbr/fake-gallery-data/images/?q=${encodedQuery}`, //for Production 'Build' i used this: http://my-json-server.typicode.com/ilanbr/fake-gallery-data/images/?q=${encodedQuery}
+        `http://localhost:3004/images/?q=${encodedQuery}`, //for Production 'Build' i used this: http://my-json-server.typicode.com/ilanbr/fake-gallery-data/images/?q=${encodedQuery}
       { jsonpCallback: 'jsoncallback' })
       .then(res => res.json())
       .then(data => {
